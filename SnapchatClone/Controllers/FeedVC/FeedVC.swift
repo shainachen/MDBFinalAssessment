@@ -40,7 +40,11 @@ class FeedVC: UIViewController  {
     func setupArrayOfSnaps() {
         arrayOfSnaps = []
         /* PART 2B START */
-        
+        FirebaseAPIClient.getSnaps(completion: {(arrayofSnaps)
+            in
+            
+            
+        })
         
         /* PART 2B FINISH */
         tableView.reloadData()
